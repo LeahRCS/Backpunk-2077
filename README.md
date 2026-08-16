@@ -27,7 +27,7 @@ A modded one with **Archive mods, RED4ext, redscript, TweakXL, ArchiveXL, Cyber 
 
 **Backpunk-2077** creates a portable snapshot of the important parts, verifies it with SHA-256, and can later put those files back in the correct places.
 
-The goal is not to be clever. The goal is to be **boring, explicit and difficult to misuse**.
+The goal is not to be only clever. The goal is to be **precise, explicit, maybe a little paranoid and definitely difficult to misuse**.
 
 > **The ideal backup tool is the one you only remember exists after your SSD dies.**
 
