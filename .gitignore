@@ -1,0 +1,4 @@
+# Local test/output artifacts
+*.log
+*.tmp
+.DS_Store

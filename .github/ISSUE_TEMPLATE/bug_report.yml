@@ -1,0 +1,49 @@
+name: 🐛 Bug report
+description: Something went wrong during detection, backup, verification or restore.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting it. Please **do not paste private paths/tokens you do not want public**.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where did it fail?
+      options:
+        - Automatic detection
+        - Backup
+        - Integrity verification
+        - PRE_RESTORE
+        - Restore
+        - Post-restore validation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Linux distribution
+      placeholder: "e.g. Fedora 42, Arch, Bazzite, SteamOS"
+    validations:
+      required: true
+  - type: dropdown
+    id: steam
+    attributes:
+      label: Steam installation
+      options:
+        - Native package
+        - Flatpak
+        - Other / unsure
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant terminal output
+      render: shell
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details

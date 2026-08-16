@@ -1,0 +1,22 @@
+name: ✨ Feature request
+description: Suggest a new backup path, launcher, safety check or workflow improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Upstream/source documentation
+      description: Especially important when proposing a new persistent mod path.
